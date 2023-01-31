@@ -1,0 +1,161 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+ul,
+li {
+  list-style-type: none;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.container-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 70%;
+  border: 1px solid #ddd;
+  box-shadow: 6px 6px 6px #ddd, -6px -6px 6px #ddd;
+  margin-top: 3.5rem;
+}
+
+.container-wrapper form input[type="text"] {
+  border: none;
+  outline: 0;
+  width: 100%;
+  display: block;
+  font-size: 18px;
+  font-style: italic;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.container-wrapper input[type="checkbox"] {
+  cursor: pointer;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  outline: 0;
+  content: 0;
+  margin-top: -3px;
+}
+
+.container-wrapper input[type="text"]:disabled {
+  border: none;
+  background-color: #fff;
+}
+
+.container-wrapper input[type=checkbox]::before {
+  font-family: 'FontAwesome', sans-serif;
+  font-size: 14px;
+  color: transparent !important;
+  content: "\f00c";
+  background-color: #fff;
+  display: block;
+  width: 15px;
+  height: 15px;
+  border: 2px solid rgb(154, 149, 149);
+  margin-right: 6px;
+}
+
+.container-wrapper input[type=checkbox]:checked::before {
+  color: rgb(108, 103, 108) !important;
+}
+
+.container-wrapper ul li {
+  border-bottom: 1px solid #ddd;
+}
+
+.header-text {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 300;
+  padding: 1rem 2rem;
+  color: rgb(108, 103, 108);
+  border-bottom: 1px solid #ddd;
+}
+
+.input-wrapper {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.todo-item {
+  display: flex;
+  padding: 1rem 2rem;
+  font-size: 20px;
+}
+
+.strike-line {
+  text-decoration: line-through;
+}
+
+.fa-level-down {
+  padding-right: 2rem;
+  padding-top: 1rem;
+  font-size: 20px;
+}
+
+.d-none {
+  display: none;
+}
+
+.trash-btn {
+  margin-left: 0.5rem;
+}
+
+.fa:hover {
+  color: rgb(57, 52, 52);
+}
+
+.fa.fa-arrows-rotate,
+.fa.fa-level-down {
+  transform: rotate(90deg);
+}
+
+.fa.fa-level-down {
+  position: absolute;
+  padding-bottom: 20px;
+  right: 20px;
+  top: 15px;
+}
+
+.fa-custom,
+.fa-ellipsis-v {
+  color: #989790;
+}
+
+.highlight {
+  color: #000;
+  background-color: rgb(236, 249, 242);
+}
+
+.highlight .fa {
+  color: #000;
+}
+
+.item-description {
+  border: none;
+  width: 100%;
+  font-size: 16px;
+  outline: 0;
+  padding-left: 8px;
+  color: rgb(108, 103, 108);
+  background-color: rgb(236, 249, 242);
+}
+
+.closure-text {
+  background-color: #fafafa;
+  text-align: center;
+  font-weight: 100;
+  padding: 1.2rem;
+  color: rgb(135, 129, 135);
+  font-size: 18px;
+}
